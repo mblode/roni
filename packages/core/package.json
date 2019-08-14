@@ -1,0 +1,44 @@
+{
+    "name": "pikcha-frame",
+    "version": "1.1.2",
+    "description": "Pikcha component library",
+    "author": "pikcha",
+    "repository": "pikcha/pikcha-frame",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
+    "scripts": {
+        "prepare": "rollup --config",
+        "clean": "rm -rf node_modules dist",
+        "test": "jest",
+        "upgrade-interactive": "npm-check --update"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "camelcase": "^5.0.0",
+        "jest": "^24.1.0",
+        "npm-check": "^5.9.0",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-test-renderer": "^16.8.6",
+        "rollup": "^1.12.2",
+        "styled-components": "^4.2.0",
+        "stylis": "^3.4.9"
+    },
+    "jest": {
+        "setupFilesAfterEnv": [
+            "../../test-setup.js"
+        ],
+        "testMatch": [
+            "<rootDir>/src/**/__test__/*.js"
+        ]
+    },
+    "dependencies": {
+        "classnames": "^2.2.6",
+        "prop-types": "^15.7.2",
+        "styled-system": "^5.0.12"
+    },
+    "peerDependencies": {
+        "styled-components": ">=2.0.0 || >=3.0.0 || >=4.0.0"
+    },
+    "gitHead": "109aa9c41e15984616f851dff6c8847299ea421f"
+}

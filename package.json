@@ -1,0 +1,94 @@
+{
+	"private": true,
+	"scripts": {
+		"precommit": "lint-staged",
+		"prepare": "lerna bootstrap --hoist",
+		"clean": "lerna run clean",
+		"changed": "lerna changed",
+		"diff": "lerna diff",
+		"public": "lerna publish",
+		"test": "jest",
+		"coverage": "jest --coverage",
+		"codecov": "npx codecov",
+		"start": "start-storybook",
+		"storybook": "build-storybook -o public",
+		"upgrade-interactive": "npm-check --update"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.4.5",
+		"@babel/plugin-proposal-class-properties": "^7.3.3",
+		"@babel/plugin-proposal-object-rest-spread": "^7.3.2",
+		"@babel/plugin-transform-runtime": "^7.4.4",
+		"@babel/preset-env": "^7.4.5",
+		"@babel/preset-react": "^7.0.0",
+		"@storybook/addon-a11y": "^5.1.9",
+		"@storybook/addon-actions": "^5.1.9",
+		"@storybook/addon-info": "^5.0.11",
+		"@storybook/addon-links": "^5.1.9",
+		"@storybook/addon-viewport": "^5.1.9",
+		"@storybook/react": "^5.1.9",
+		"babel-loader": "^8.0.6",
+		"enzyme": "^3.10.0",
+		"enzyme-adapter-react-16": "^1.14.0",
+		"husky": "^3.0.0",
+		"jest": "^24.1.0",
+		"jest-styled-components": "^6.3.3",
+		"lerna": "^3.15.0",
+		"lint-staged": "^9.0.2",
+		"npm-check": "^5.9.0",
+		"prettier": "^1.18.2",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"react-draggable-playground": "^1.0.0",
+		"react-testing-library": "^8.0.1",
+		"rollup": "^1.16.2",
+		"rollup-plugin-babel": "^4.3.3",
+		"rollup-plugin-babel-runtime-external": "^2.0.0",
+		"rollup-plugin-commonjs": "^10.0.0",
+		"rollup-plugin-filesize": "^6.1.1",
+		"rollup-plugin-json": "^4.0.0",
+		"rollup-plugin-node-resolve": "^5.1.0",
+		"storybook-addon-jsx": "^7.1.2",
+		"styled-components": "^4.3.2"
+	},
+	"jest": {
+		"setupFilesAfterEnv": [
+			"./test-setup.js"
+		],
+		"coverageReporters": [
+			"lcov",
+			"html"
+		],
+		"coveragePathIgnorePatterns": [
+			"/node_modules/",
+			"dist"
+		],
+		"coverageThreshold": {
+			"global": {
+				"branches": 90,
+				"functions": 90,
+				"lines": 90,
+				"statements": 90
+			}
+		},
+		"testMatch": [
+			"<rootDir>/packages/**/src/**/__test__/*.js"
+		]
+	},
+	"lint-staged": {
+		"*.{js,md}": [
+			"prettier --no-semi --single-quote --write",
+			"git add"
+		]
+	},
+	"dependencies": {
+		"@reach/dialog": "^0.2.9",
+		"@styled-system/theme-get": "^5.0.12",
+		"core-js": "^3.1.4",
+		"npm": "^6.9.0",
+		"react-tabs": "^3.0.0",
+		"react-transition-group": "^4.1.1",
+		"shallowequal": "^1.1.0",
+		"styled-system": "^5.0.12"
+	}
+}
