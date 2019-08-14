@@ -1,9 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-// import PropTypes from 'prop-types'
-// import { Transition } from 'react-transition-group'
-// import { color, width, height } from 'styled-system'
-// import { Box } from 'pikcha-frame'
 
 const show = props =>
     props.show &&

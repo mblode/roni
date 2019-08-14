@@ -1,13 +1,13 @@
-# Pikcha Frame
+# Roni Component Library
 
-> Pikcha component library for React
+> React component library for React
 
-[![NPM](https://img.shields.io/npm/v/pikcha-frame.svg)](https://www.npmjs.com/package/pikcha-frame) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/roni.svg)](https://www.npmjs.com/package/roni) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save pikcha-frame
+npm install --save roni
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install --save pikcha-frame
 ```tsx
 import * as React from 'react'
 
-import { Button } from 'pikcha-frame'
+import { Button } from 'roni'
 
 class Example extends React.Component {
   render() {
