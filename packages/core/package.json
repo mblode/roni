@@ -40,5 +40,5 @@
     "peerDependencies": {
         "styled-components": ">=2.0.0 || >=3.0.0 || >=4.0.0"
     },
-    "gitHead": "109aa9c41e15984616f851dff6c8847299ea421f"
+    "gitHead": "7dacf9d879d0aab04ae2cb69495765263b6ad7f6"
 }
