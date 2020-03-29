@@ -1,7 +1,7 @@
-import { Tab as RTab } from 'react-tabs'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { space, color } from 'styled-system'
+import { Tab as RTab } from 'react-tabs';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { space, color } from 'styled-system';
 
 const Tab = styled(RTab).attrs({
     role: 'Tab'
@@ -26,11 +26,11 @@ const Tab = styled(RTab).attrs({
 
     ${space}
     ${color}
-`
+`;
 
 Tab.propTypes = {
     ...color.propTypes,
     ...space.propTypes
-}
+};
 
-export default Tab
+export default Tab;

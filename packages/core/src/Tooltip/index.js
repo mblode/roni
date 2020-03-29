@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import classnames from 'classnames'
-import styled from 'styled-components'
-import { get } from '../Theme'
+import React from 'react';
+import PropTypes from 'prop-types';
+import classnames from 'classnames';
+import styled from 'styled-components';
+import { get } from '../Theme';
 
 function TooltipBase({ direction, children, className, text, noDelay, align, wrap }) {
     const classes = classnames(
@@ -11,12 +11,12 @@ function TooltipBase({ direction, children, className, text, noDelay, align, wra
         align && `tooltipped-align-${align}-2`,
         noDelay && 'tooltipped-no-delay',
         wrap && 'tooltipped-multiline'
-    )
+    );
     return (
         <span aria-label={text} className={classes}>
             {children}
         </span>
-    )
+    );
 }
 
 const Tooltip = styled(TooltipBase)`
@@ -235,15 +235,15 @@ const Tooltip = styled(TooltipBase)`
     &.tooltipped-align-left-2::before {
         left: 10px;
     }
-`
+`;
 
-Tooltip.alignments = ['left', 'right']
+Tooltip.alignments = ['left', 'right'];
 
-Tooltip.directions = ['n', 'ne', 'e', 'se', 's', 'sw', 'w', 'nw']
+Tooltip.directions = ['n', 'ne', 'e', 'se', 's', 'sw', 'w', 'nw'];
 
 Tooltip.defaultProps = {
     direction: 'n'
-}
+};
 
 Tooltip.propTypes = {
     align: PropTypes.oneOf(Tooltip.alignments),
@@ -252,6 +252,6 @@ Tooltip.propTypes = {
     noDelay: PropTypes.bool,
     text: PropTypes.string,
     wrap: PropTypes.bool
-}
+};
 
-export default Tooltip
+export default Tooltip;

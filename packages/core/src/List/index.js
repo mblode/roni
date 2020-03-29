@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components'
-import PropTypes from 'prop-types'
-import { space, color } from 'styled-system'
+import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types';
+import { space, color } from 'styled-system';
 
 const unstyled = props =>
     props.unstyled &&
@@ -11,7 +11,7 @@ const unstyled = props =>
         li {
             list-style: none;
         }
-    `
+    `;
 
 const inline = props =>
     props.inline &&
@@ -26,25 +26,25 @@ const inline = props =>
         li:not(:last-child) {
             margin-right: 1rem;
         }
-    `
+    `;
 
 const List = styled.ul`
     ${space}
     ${color}
     ${unstyled}
     ${inline}
-`
+`;
 
 List.defaultProps = {
     as: 'ul',
     m: 0
-}
+};
 
 List.propTypes = {
     ...space.propTypes,
     ...color.propTypes,
     unstyled: PropTypes.bool,
     inline: PropTypes.bool
-}
+};
 
-export default List
+export default List;

@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react'
-import { ThemeProvider as StyledThemeProvider, createGlobalStyle } from 'styled-components'
-import Theme, { get } from '../Theme'
+import React, { Fragment } from 'react';
+import { ThemeProvider as StyledThemeProvider, createGlobalStyle } from 'styled-components';
+import Theme, { get } from '../Theme';
 
 const Reboot = createGlobalStyle`
     *,
@@ -340,7 +340,7 @@ const Reboot = createGlobalStyle`
     [hidden] {
         display: none !important;
     }
-`
+`;
 
 const ThemeProvider = props => {
     return (
@@ -350,7 +350,7 @@ const ThemeProvider = props => {
                 {props.children}
             </Fragment>
         </StyledThemeProvider>
-    )
-}
+    );
+};
 
-export default ThemeProvider
+export default ThemeProvider;

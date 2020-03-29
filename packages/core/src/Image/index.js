@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types'
-import styled, { css } from 'styled-components'
-import { height, borderRadius } from 'styled-system'
-import { get } from '../Theme'
+import PropTypes from 'prop-types';
+import styled, { css } from 'styled-components';
+import { height, borderRadius } from 'styled-system';
+import { get } from '../Theme';
 
 const thumbnail = props =>
     props.thumbnail &&
@@ -14,7 +14,7 @@ const thumbnail = props =>
         min-width: 4rem;
         max-width: 100%;
         width: 6rem;
-    `
+    `;
 
 const Image = styled.img`
     max-width: 100%;
@@ -22,17 +22,17 @@ const Image = styled.img`
     ${height}
     ${borderRadius}
     ${thumbnail}
-`
+`;
 
 Image.defaultProps = {
     as: 'img',
     m: 0
-}
+};
 
 Image.propTypes = {
     ...height.propTypes,
     ...borderRadius.propTypes,
     thumbnail: PropTypes.bool
-}
+};
 
-export default Image
+export default Image;

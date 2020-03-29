@@ -1,8 +1,8 @@
-import { get as getKey } from 'styled-system'
-import { themeGet } from '@styled-system/theme-get'
+import { get as getKey } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
 
 function fontStack(fonts) {
-    return fonts.map(font => (font.includes(' ') ? `"${font}"` : font)).join(', ')
+    return fonts.map(font => (font.includes(' ') ? `"${font}"` : font)).join(', ');
 }
 
 const color = {
@@ -16,7 +16,7 @@ const color = {
     orange: ['#FFFAF0', '#FEEBC8', '#FBD38D', '#F6AD55', '#ED8936', '#DD6B20', '#C05621', '#9C4221', '#7B341E'],
     red: ['#FFF5F5', '#FED7D7', '#FEB2B2', '#FC8181', '#F56565', '#E53E3E', '#C53030', '#9B2C2C', '#742A2A'],
     purple: ['#FAF5FF', '#E9D8FD', '#D6BCFA', '#B794F4', '#9F7AEA', '#805AD5', '#6B46C1', '#553C9A', '#44337A']
-}
+};
 
 const colors = {
     transparent: color.transparent,
@@ -29,7 +29,7 @@ const colors = {
     purple: color.purple,
     red: color.red,
     yellow: color.yellow
-}
+};
 
 const Theme = {
     breakpoints: ['544px', '768px', '1012px', '1280px'],
@@ -92,9 +92,9 @@ const Theme = {
         focus: '0 0 0 3px rgba(66, 153, 225, 0.5)'
     },
     space: [0, 4, 8, 12, 16, 24, 32, 48, 64, 96, 128]
-}
+};
 
-export default Theme
-export { colors }
+export default Theme;
+export { colors };
 
-export const get = key => themeGet(key, getKey(Theme, key))
+export const get = key => themeGet(key, getKey(Theme, key));

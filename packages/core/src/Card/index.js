@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { get } from '../Theme'
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { get } from '../Theme';
 import {
     space,
     color,
@@ -13,7 +13,7 @@ import {
     backgroundPosition,
     backgroundRepeat,
     opacity
-} from 'styled-system'
+} from 'styled-system';
 
 const Card = styled.div`
     border-radius: ${get('radii.md')};
@@ -29,11 +29,11 @@ const Card = styled.div`
     ${backgroundPosition}
     ${backgroundRepeat}
     ${opacity}
-`
+`;
 
 Card.defaultProps = {
     p: 5,
     bg: 'white'
-}
+};
 
-export default Card
+export default Card;

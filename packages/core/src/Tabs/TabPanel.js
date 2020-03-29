@@ -1,7 +1,7 @@
-import { TabPanel as RTabPanel } from 'react-tabs'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { space, color } from 'styled-system'
+import { TabPanel as RTabPanel } from 'react-tabs';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { space, color } from 'styled-system';
 
 const TabPanel = styled(RTabPanel).attrs({
     role: 'TabPanel'
@@ -14,11 +14,11 @@ const TabPanel = styled(RTabPanel).attrs({
 
     ${space}
     ${color}
-`
+`;
 
 TabPanel.propTypes = {
     ...color.propTypes,
     ...space.propTypes
-}
+};
 
-export default TabPanel
+export default TabPanel;

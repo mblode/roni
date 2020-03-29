@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { space, color, fontSize, fontStyle, fontWeight, textAlign, lineHeight, letterSpacing } from 'styled-system'
+import styled from 'styled-components';
+import { space, color, fontSize, fontStyle, fontWeight, textAlign, lineHeight, letterSpacing } from 'styled-system';
 
 const ListItem = styled.li`
     ${space}
@@ -10,12 +10,12 @@ const ListItem = styled.li`
     ${textAlign}
     ${lineHeight}
     ${letterSpacing}
-`
+`;
 
 ListItem.defaultProps = {
     m: 0,
     fontSize: 2
-}
+};
 
 ListItem.propTypes = {
     ...space.propTypes,
@@ -26,6 +26,6 @@ ListItem.propTypes = {
     ...lineHeight.propTypes,
     ...textAlign.propTypes,
     ...letterSpacing.propTypes
-}
+};
 
-export default ListItem
+export default ListItem;

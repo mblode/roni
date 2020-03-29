@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { space, color, fontSize, fontStyle, fontWeight, textAlign, lineHeight, letterSpacing } from 'styled-system'
+import styled from 'styled-components';
+import { space, color, fontSize, fontStyle, fontWeight, textAlign, lineHeight, letterSpacing } from 'styled-system';
 
 const Text = styled.p`
     word-wrap: break-word;
@@ -12,12 +12,12 @@ const Text = styled.p`
     ${textAlign}
     ${lineHeight}
     ${letterSpacing}
-`
+`;
 
 Text.defaultProps = {
     m: 0,
     fontSize: 2
-}
+};
 
 Text.propTypes = {
     ...space.propTypes,
@@ -28,6 +28,6 @@ Text.propTypes = {
     ...lineHeight.propTypes,
     ...textAlign.propTypes,
     ...letterSpacing.propTypes
-}
+};
 
-export default Text
+export default Text;

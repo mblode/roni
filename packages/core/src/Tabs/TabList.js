@@ -1,7 +1,7 @@
-import { TabList as RTabList } from 'react-tabs'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { space, color } from 'styled-system'
+import { TabList as RTabList } from 'react-tabs';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { space, color } from 'styled-system';
 
 const TabList = styled(RTabList).attrs({
     role: 'TabList'
@@ -15,11 +15,11 @@ const TabList = styled(RTabList).attrs({
 
     ${space}
     ${color}
-`
+`;
 
 TabList.propTypes = {
     ...color.propTypes,
     ...space.propTypes
-}
+};
 
-export default TabList
+export default TabList;

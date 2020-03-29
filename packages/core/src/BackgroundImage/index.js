@@ -1,9 +1,9 @@
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { height, width, borderRadius } from 'styled-system'
-import { get } from '../Theme'
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { height, width, borderRadius } from 'styled-system';
+import { get } from '../Theme';
 
-const image = props => (props.image ? { backgroundImage: `url(${props.image})` } : null)
+const image = props => (props.image ? { backgroundImage: `url(${props.image})` } : null);
 
 const BackgroundImage = styled.div`
     background-position: center;
@@ -14,13 +14,13 @@ const BackgroundImage = styled.div`
     ${height}
     ${width}
     ${borderRadius}
-`
+`;
 
 BackgroundImage.propTypes = {
     image: PropTypes.string,
     ...height.propTypes,
     ...width.propTypes,
     ...borderRadius.propTypes
-}
+};
 
-export default BackgroundImage
+export default BackgroundImage;

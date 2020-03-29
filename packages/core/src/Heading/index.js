@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { space, color, fontSize, fontStyle, fontWeight, textAlign, lineHeight, letterSpacing } from 'styled-system'
-import { get } from '../Theme'
+import styled from 'styled-components';
+import { space, color, fontSize, fontStyle, fontWeight, textAlign, lineHeight, letterSpacing } from 'styled-system';
+import { get } from '../Theme';
 
 const Heading = styled.h1`
     margin-bottom: 0.5rem;
@@ -15,13 +15,13 @@ const Heading = styled.h1`
     ${textAlign}
     ${lineHeight}
     ${letterSpacing}
-`
+`;
 
 Heading.defaultProps = {
     m: 0,
     fontSize: 7,
     fontWeight: 'bold'
-}
+};
 
 Heading.propTypes = {
     ...space.propTypes,
@@ -32,6 +32,6 @@ Heading.propTypes = {
     ...lineHeight.propTypes,
     ...textAlign.propTypes,
     ...letterSpacing.propTypes
-}
+};
 
-export default Heading
+export default Heading;

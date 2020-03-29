@@ -1,11 +1,11 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const show = props =>
     props.show &&
     css`
         display: block;
-    `
+    `;
 
 const StyledModal = styled.div`
     position: fixed;
@@ -17,7 +17,7 @@ const StyledModal = styled.div`
     display: none;
 
     ${show}
-`
+`;
 
 const ModalMain = styled.section`
     position: fixed;
@@ -27,7 +27,7 @@ const ModalMain = styled.section`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-`
+`;
 
 const Modal = ({ handleClose, show, children }) => {
     return (
@@ -37,8 +37,8 @@ const Modal = ({ handleClose, show, children }) => {
                 <button onClick={handleClose}>Close</button>
             </ModalMain>
         </StyledModal>
-    )
-}
+    );
+};
 
 // Modal.defaultProps = {
 //     isOpen: false,
@@ -65,4 +65,4 @@ const Modal = ({ handleClose, show, children }) => {
 //     header: PropTypes.any
 // }
 
-export default Modal
+export default Modal;

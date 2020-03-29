@@ -1,14 +1,14 @@
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { space, color } from 'styled-system'
-import { get } from '../Theme'
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { space, color } from 'styled-system';
+import { get } from '../Theme';
 
 const kindMap = {
     default: { border: 'colors.gray.6', color: 'colors.gray.7', bg: 'colors.white' },
     success: { border: 'colors.green.6', color: 'colors.green.7', bg: 'colors.green.1' },
     warning: { border: 'colors.yellow.6', color: 'colors.yellow.7', bg: 'colors.yellow.1' },
     danger: { border: 'colors.red.6', color: 'colors.red.7', bg: 'colors.red.1' }
-}
+};
 
 const Alert = styled.div`
     position: relative;
@@ -25,16 +25,16 @@ const Alert = styled.div`
 
     ${color}
     ${space}
-`
+`;
 
 Alert.defaultProps = {
     kind: 'default'
-}
+};
 
 Alert.propTypes = {
     children: PropTypes.node,
     ...color.propTypes,
     ...space.propTypes
-}
+};
 
-export default Alert
+export default Alert;

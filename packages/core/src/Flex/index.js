@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import {
     space,
     color,
@@ -12,8 +12,8 @@ import {
     order,
     alignSelf,
     borderRadius
-} from 'styled-system'
-import Theme from '../Theme'
+} from 'styled-system';
+import Theme from '../Theme';
 
 const Flex = styled.div`
     display: flex;
@@ -30,9 +30,9 @@ const Flex = styled.div`
     ${order}
     ${alignSelf}
     ${borderRadius}
-`
+`;
 
-Flex.defaultProps = { Theme }
+Flex.defaultProps = { Theme };
 
 Flex.propTypes = {
     ...space.propTypes,
@@ -47,6 +47,6 @@ Flex.propTypes = {
     ...order.propTypes,
     ...alignSelf.propTypes,
     ...borderRadius.propTypes
-}
+};
 
-export default Flex
+export default Flex;

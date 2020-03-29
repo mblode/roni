@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { fontFamily, fontWeight, textAlign, lineHeight, letterSpacing } from 'styled-system'
+import styled from 'styled-components';
+import { fontFamily, fontWeight, textAlign, lineHeight, letterSpacing } from 'styled-system';
 
 const Label = styled.label`
     display: inline-block;
@@ -13,6 +13,6 @@ const Label = styled.label`
     &:hover {
         text-decoration: none;
     }
-`
+`;
 
-export default Label
+export default Label;

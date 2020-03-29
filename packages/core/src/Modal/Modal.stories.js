@@ -1,18 +1,18 @@
-import React, { Component, Fragment } from 'react'
-import { storiesOf } from '@storybook/react'
-import { Modal, Button } from '..'
+import React, { Component, Fragment } from 'react';
+import { storiesOf } from '@storybook/react';
+import { Modal, Button } from '..';
 // import styled from 'styled-components'
 
 class ModalStory extends Component {
-    state = { show: false }
+    state = { show: false };
 
     showModal = () => {
-        this.setState({ show: true })
-    }
+        this.setState({ show: true });
+    };
 
     hideModal = () => {
-        this.setState({ show: false })
-    }
+        this.setState({ show: false });
+    };
 
     render() {
         return (
@@ -24,8 +24,8 @@ class ModalStory extends Component {
 
                 <Button onClick={this.showModal}>Open</Button>
             </Fragment>
-        )
+        );
     }
 }
 
-storiesOf('Modal', module).add('Default modal', () => <ModalStory />)
+storiesOf('Modal', module).add('Default modal', () => <ModalStory />);

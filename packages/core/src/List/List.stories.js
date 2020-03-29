@@ -1,6 +1,6 @@
-import { storiesOf } from '@storybook/react'
-import React from 'react'
-import { List, ListItem } from '..'
+import { storiesOf } from '@storybook/react';
+import React from 'react';
+import { List, ListItem } from '..';
 
 storiesOf('List', module)
     .add('Unordered list', () => (
@@ -11,7 +11,7 @@ storiesOf('List', module)
         </List>
     ))
     .add('Ordered list', () => (
-        <List as="ol">
+        <List as='ol'>
             <ListItem>First item</ListItem>
             <ListItem>Second item</ListItem>
             <ListItem>Third Item</ListItem>
@@ -30,4 +30,4 @@ storiesOf('List', module)
             <ListItem>Second item</ListItem>
             <ListItem>Third Item</ListItem>
         </List>
-    ))
+    ));

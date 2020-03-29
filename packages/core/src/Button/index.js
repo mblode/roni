@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types'
-import styled, { css, keyframes } from 'styled-components'
-import { space } from 'styled-system'
-import { get } from '../Theme'
+import PropTypes from 'prop-types';
+import styled, { css, keyframes } from 'styled-components';
+import { space } from 'styled-system';
+import { get } from '../Theme';
 
 const rotate = keyframes`
     0% {
@@ -11,7 +11,7 @@ const rotate = keyframes`
     100% {
         transform: rotate(360deg);
     }
-`
+`;
 
 const size = props => {
     switch (props.size) {
@@ -19,19 +19,19 @@ const size = props => {
             return {
                 fontSize: '14px',
                 padding: '4px 12px'
-            }
+            };
         case 'lg':
             return {
                 fontSize: '16px',
                 padding: '12px 24px'
-            }
+            };
         default:
             return {
                 fontSize: '14px',
                 padding: '8px 16px'
-            }
+            };
     }
-}
+};
 
 const kindMap = {
     primary: {
@@ -58,7 +58,7 @@ const kindMap = {
         hoverColor: 'colors.white',
         hoverBorder: 'colors.red.6'
     }
-}
+};
 
 const loading = props =>
     props.loading &&
@@ -86,14 +86,14 @@ const loading = props =>
             width: 1rem;
             z-index: 1;
         }
-    `
+    `;
 
 const block = props =>
     props.block &&
     css`
         display: block;
         width: 100%;
-    `
+    `;
 
 const Button = styled.button`
     display: inline-flex;
@@ -138,13 +138,13 @@ const Button = styled.button`
     ${loading}
     ${block}
     ${space};
-`
+`;
 
 Button.defaultProps = {
     kind: 'basic',
     size: 'md',
     as: 'button'
-}
+};
 
 Button.propTypes = {
     size: PropTypes.oneOf(['sm', 'md', 'lg']),
@@ -155,6 +155,6 @@ Button.propTypes = {
     plain: PropTypes.bool,
     destructive: PropTypes.bool,
     ...space.propTypes
-}
+};
 
-export default Button
+export default Button;
