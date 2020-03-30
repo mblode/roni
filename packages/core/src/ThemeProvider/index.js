@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { ThemeProvider as StyledThemeProvider, createGlobalStyle } from 'styled-components';
-import Theme, { get } from '../Theme';
+import { lightTheme, darkTheme, get } from '../Theme';
+import { useDarkMode } from '../useDarkMode';
 
 const Reboot = createGlobalStyle`
     *,
@@ -343,8 +344,16 @@ const Reboot = createGlobalStyle`
 `;
 
 const ThemeProvider = props => {
+    const [theme, componentMounted] = useDarkMode();
+
+    const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
+    if (!componentMounted) {
+        return <div />;
+    }
+
     return (
-        <StyledThemeProvider theme={Theme}>
+        <StyledThemeProvider theme={themeMode}>
             <Fragment>
                 <Reboot />
                 {props.children}
