@@ -35,12 +35,12 @@ const size = props => {
 
 const kindMap = {
     primary: {
-        bg: 'colors.blue.5',
+        bg: 'colors.blue.4',
         color: 'colors.white',
-        border: 'colors.blue.6',
-        hoverBg: 'colors.blue.6',
+        border: 'colors.blue.5',
+        hoverBg: 'colors.blue.5',
         hoverColor: 'colors.white',
-        hoverBorder: 'colors.blue.6'
+        hoverBorder: 'colors.blue.5'
     },
     basic: {
         bg: 'colors.white',
@@ -51,12 +51,12 @@ const kindMap = {
         hoverBorder: 'colors.gray.3'
     },
     destructive: {
-        bg: 'colors.red.5',
+        bg: 'colors.red.4',
         color: 'colors.white',
-        border: 'colors.red.6',
-        hoverBg: 'colors.red.6',
+        border: 'colors.red.5',
+        hoverBg: 'colors.red.5',
         hoverColor: 'colors.white',
-        hoverBorder: 'colors.red.6'
+        hoverBorder: 'colors.red.5'
     }
 };
 

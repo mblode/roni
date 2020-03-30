@@ -99,7 +99,7 @@ export const lightTheme = {
 const darkColor = {
     transparent: 'transparent',
     black: '#fff',
-    white: '#020002',
+    white: '#1A202C',
     gray: ['#1A202C', '#2D3748', '#4A5568', '#718096', '#A0AEC0', '#CBD5E0', '#E2E8F0', '#EDF2F7', '#F7FAFC'],
     blue: ['#2A4365', '#2C5282', '#2B6CB0', '#3182CE', '#4299E1', '#63B3ED', '#90CDF4', '#BEE3F8', '#EBF8FF'],
     green: ['#22543D', '#276749', '#2F855A', '#38A169', '#48BB78', '#68D391', '#9AE6B4', '#C6F6D5', '#F0FFF4'],
