@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { ThemeProvider as StyledThemeProvider, createGlobalStyle } from 'styled-components';
 import { lightTheme, darkTheme, get } from '../Theme';
-import { useDarkMode } from '../useDarkMode';
 
 const Reboot = createGlobalStyle`
     *,
@@ -344,12 +343,10 @@ const Reboot = createGlobalStyle`
 `;
 
 const ThemeProvider = props => {
-    const [theme, componentMounted] = useDarkMode();
+    let themeMode = lightTheme;
 
-    const themeMode = theme === 'light' ? lightTheme : darkTheme;
-
-    if (!componentMounted) {
-        return <div />;
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        themeMode = darkTheme;
     }
 
     return (
